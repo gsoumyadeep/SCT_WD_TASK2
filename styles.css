@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s ease;
+}
+
+.stopwatch-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.time-display {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+.stopwatch-btn {
+    padding: 12px 30px;
+    margin: 5px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#startBtn {
+    background-color: #28a745;
+    color: white;
+}
+
+#pauseBtn {
+    background-color: #ffae42;
+    color: white;
+}
+
+#resetBtn {
+    background-color: #dc3545;
+    color: white;
+}
+
+#lapBtn {
+    background-color: #007bff;
+    color: white;
+}
+
+.stopwatch-btn:hover {
+    opacity: 0.69;
+}
+
+/* Laps Section */
+.laps {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.lap-item {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Background Color Changes */
+body.start-bg {
+    background-color: #c5f8c5; /* Light green */
+}
+
+body.pause-bg {
+    background-color: #ffdf9b; /* Light orange */
+}
+
+body.reset-bg {
+    background-color: #f88787; /* Light red */
+}
